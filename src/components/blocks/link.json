@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_links",
+  "info": {
+    "displayName": "link"
+  },
+  "options": {},
+  "attributes": {
+    "linkTitle": {
+      "type": "string",
+      "required": true
+    },
+    "linkSrc": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

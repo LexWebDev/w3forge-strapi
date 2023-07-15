@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_stages",
+  "info": {
+    "singularName": "dev-stage",
+    "pluralName": "dev-stages",
+    "displayName": "Dev Stage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 44
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 175
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "dev_stages"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

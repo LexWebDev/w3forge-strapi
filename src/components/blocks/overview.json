@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_overviews",
+  "info": {
+    "displayName": "Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.tag",
+      "required": true
+    },
+    "dateCase": {
+      "type": "date",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.link"
+    }
+  }
+}

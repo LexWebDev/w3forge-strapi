@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_authors",
+  "info": {
+    "displayName": "Author",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

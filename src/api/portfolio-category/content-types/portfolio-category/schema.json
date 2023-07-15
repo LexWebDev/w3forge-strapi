@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_categories",
+  "info": {
+    "singularName": "portfolio-category",
+    "pluralName": "portfolio-categories",
+    "displayName": "Portfolio Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "portfolio_cases": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-case.portfolio-case",
+      "mappedBy": "portfolio_category"
+    }
+  }
+}
